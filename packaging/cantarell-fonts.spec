@@ -1,6 +1,11 @@
 %define _fontsdir               %{_usr}/share/fonts
-%define cantarell_dir %{_fontsdir}/cantarell
+%define _ttfontsdir             %{_fontsdir}/truetype
+%define _miscfontsdir           %{_fontsdir}/misc
+%define _fontsconfdir           %{_sysconfdir}/fonts
+%define _fontsconfddir          %{_fontsconfdir}/conf.d
 %define _fontsconfavaildir      %{_datadir}/%{name}/conf.avail
+
+%define cantarell_dir %{_fontsdir}/cantarell
 
 Name:           cantarell-fonts
 Version:        0.0.11
