@@ -1,0 +1,57 @@
+0.0.11
+ - use ligature lookup tables
+ - make digits monospaced for bold
+
+0.0.10.1
+ - build related fixes
+
+0.0.10
+ - generate OTF from SFDs automatically (Fabian Greffrath)
+ - install to appropriate system directories (Fabian Greffrath)
+ - fix cyrillic metrics
+ - improve EE diacritics
+
+0.0.9
+ - initial support for Cyrillic
+ - uppercase Greek
+
+0.0.8
+ - accented l. #665433
+ - extrema & node fixes
+ - build related fixes
+
+0.0.7
+ - ON/OFF glyphs. bug #643120
+ - combining circumflex metrics. bug #637066 
+ - ] hinting. bug #652834
+ - bold: 'a','e','n','s' and 'c' hints.
+ - black circle a circle. bug #660442
+ - bold: sync accented characters with base glyph.
+
+0.0.6
+ - bold l
+ - fix umlaut positions. bug #646222
+ - README fixes
+
+0.0.5
+ - improved password entry glyph
+ - improved hyphen by making narrower 
+ - improved licensing and FONTLOG metadata 
+ - improved vertical metrics
+
+0.0.4
+ - improved hints on numerals and bold letters
+ - improved metrics
+
+0.0.3
+ - create the tarball from the actual git master
+ - fixed the fontconfig script not to override the global default
+
+0.0.2
+ - improved hints, hinting related metrics
+ - added black circle glyph for password entries
+ - increased size of '^'
+
+0.0.1
+ - Initial GNOME release of Cantarell.
+ - Various improvements by Jakub Steiner
