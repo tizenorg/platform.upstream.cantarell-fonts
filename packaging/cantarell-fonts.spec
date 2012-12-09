@@ -19,7 +19,7 @@ BuildRequires:  dos2unix
 BuildRequires:  fontconfig
 BuildRequires:  pkg-config
 BuildRequires:  xz
-Requires(pre):  perl 
+Requires(pre):  %{_bindir}/fc-cache
 BuildArch:      noarch
 
 %description
@@ -39,12 +39,11 @@ mkdir -p %{buildroot}%{_fontsconfddir}
 ln -s ../../..%{_fontsconfavaildir}/31-cantarell.conf  %{buildroot}%{_fontsconfddir}
 
 %post
-LC_ALL=POSIX
-/usr/sbin/fonts-config
+%{_bindir}/fc-cache %{cantarell_dir} || :
 
 %postun
-LC_ALL=POSIX
-/usr/sbin/fonts-config
+%{_bindir}/fc-cache %{cantarell_dir} || :
+
 
 %files
 %defattr(-,root,root)
