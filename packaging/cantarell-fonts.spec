@@ -34,7 +34,7 @@ for on-screen reading.
 dos2unix COPYING
 
 %install
-%make_install configdir=%{_fontsconfavaildir}
+make install DESTDIR=%{?buildroot} configdir=%{_fontsconfavaildir}
 mkdir -p %{buildroot}%{_fontsconfddir}
 ln -s ../../..%{_fontsconfavaildir}/31-cantarell.conf  %{buildroot}%{_fontsconfddir}
 
