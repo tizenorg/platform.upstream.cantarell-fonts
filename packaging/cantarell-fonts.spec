@@ -8,7 +8,7 @@
 %define cantarell_dir %{_fontsdir}/cantarell
 
 Name:           cantarell-fonts
-Version:        0.0.11
+Version:        0.0.12
 Release:        0
 Summary:        Contemporary Humanist Sans Serif Font
 License:        OFL-1.1
