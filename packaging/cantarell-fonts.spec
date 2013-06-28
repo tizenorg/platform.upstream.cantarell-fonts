@@ -15,6 +15,7 @@ License:        OFL-1.1
 Group:          System/X11/Fonts
 Url:            http://live.gnome.org/CantarellFonts
 Source:         http://download.gnome.org/sources/cantarell-fonts/0.0/%{name}-%{version}.tar.xz
+Source1001: 	cantarell-fonts.manifest
 BuildRequires:  dos2unix
 BuildRequires:  fontconfig
 BuildRequires:  pkg-config
@@ -28,6 +29,7 @@ for on-screen reading.
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 
 %build
 %configure
@@ -46,6 +48,7 @@ ln -s ../../..%{_fontsconfavaildir}/31-cantarell.conf  %{buildroot}%{_fontsconfd
 
 
 %files
+%manifest %{name}.manifest
 %defattr(-,root,root)
 %license COPYING
 %dir %{_datadir}/%{name}
